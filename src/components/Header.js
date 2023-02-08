@@ -51,7 +51,7 @@ function Header() {
               variant="h6"
               className={classes.title}
             >
-              KomaCrypto
+              vonatlus-crypto-tracker
             </Typography>
             <Select
               variant="outlined"
