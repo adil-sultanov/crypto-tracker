@@ -51,7 +51,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Отслеживайте нужную вам криптовалюту без трудностей
+            Track your favorite crypto currencies  
           </Typography>
         </div>
         <Carousel />
