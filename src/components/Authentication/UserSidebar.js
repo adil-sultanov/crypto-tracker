@@ -90,7 +90,7 @@ export default function UserSidebar() {
     setAlert({
       open: true,
       type: "success",
-      message: "Выход успешен !",
+      message: "Succesfully logged out.",
     });
 
     toggleDrawer();
@@ -107,7 +107,7 @@ export default function UserSidebar() {
 
       setAlert({
         open: true,
-        message: `${coin.name} Удалено из отслеживаемого !`,
+        message: `${coin.name} Removed from watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -187,7 +187,7 @@ export default function UserSidebar() {
                 className={classes.logout}
                 onClick={logOut}
               >
-                Выйти
+                Log out
               </Button>
             </div>
           </Drawer>
