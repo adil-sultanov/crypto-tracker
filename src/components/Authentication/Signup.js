@@ -15,7 +15,7 @@ const Signup = ({ handleClose }) => {
     if (password !== confirmPassword) {
       setAlert({
         open: true,
-        message: "Пароль не совпадает",
+        message: "Passwords mismatch",
         type: "error",
       });
       return;
@@ -29,7 +29,7 @@ const Signup = ({ handleClose }) => {
       );
       setAlert({
         open: true,
-        message: `Регистрация завершена. Добро пожаловать ${result.user.email}`,
+        message: `Success. Welcome ${result.user.email}`,
         type: "success",
       });
 
@@ -63,7 +63,7 @@ const Signup = ({ handleClose }) => {
       />
       <TextField
         variant="outlined"
-        label="Пароль"
+        label="Password"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
@@ -71,7 +71,7 @@ const Signup = ({ handleClose }) => {
       />
       <TextField
         variant="outlined"
-        label="Подтвердите пароль"
+        label="Confirm password"
         type="password"
         value={confirmPassword}
         onChange={(e) => setConfirmPassword(e.target.value)}
@@ -83,7 +83,7 @@ const Signup = ({ handleClose }) => {
         style={{ backgroundColor: "#EEBC1D" }}
         onClick={handleSubmit}
       >
-        Зарегистрироваться
+        Sign up
       </Button>
     </Box>
   );
