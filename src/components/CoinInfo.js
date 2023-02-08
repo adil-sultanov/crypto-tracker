@@ -53,7 +53,7 @@ const CoinInfo = ({ coin }) => {
       primary: {
         main: "#fff",
       },
-      type: "light",
+      type: "dark",
     },
   });
 
