@@ -62,8 +62,8 @@ function Header() {
               onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={"USD"}>USD - $</MenuItem>
-              <MenuItem value={"RUB"}>RUB - ₽</MenuItem>
-              <MenuItem value={"KZT"}>KZT - ₸</MenuItem>
+              <MenuItem value={"GBP"}>GPB - £</MenuItem>
+              <MenuItem value={"KRW"}>KRW - W</MenuItem>
             </Select>
 
             {user ? <UserSidebar /> : <AuthModal />}
