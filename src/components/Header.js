@@ -53,17 +53,17 @@ function Header() {
             >
               vonatlus-crypto-tracker
             </Typography>
-//             <Select
-//               variant="outlined"
-//               labelId="demo-simple-select-label"
-//               id="demo-simple-select"
-//               value={currency}
-//               style={{ width: 135, height: 40 }}
-//               onChange={(e) => setCurrency(e.target.value)}
-//             >
-//               <MenuItem value={"USD"}>USD - $</MenuItem>
-//               <MenuItem value={"RUB"}>GPB - £</MenuItem>
-//             </Select>
+              <Select
+                variant="outlined"
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={currency}
+                style={{ width: 135, height: 40 }}
+                onChange={(e) => setCurrency(e.target.value)}
+              >
+                <MenuItem value={"USD"}>USD - $</MenuItem>
+                <MenuItem value={"RUB"}>RUB - ₽</MenuItem>
+              </Select>
 
             {user ? <UserSidebar /> : <AuthModal />}
           </Toolbar>
