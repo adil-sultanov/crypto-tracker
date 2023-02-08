@@ -63,7 +63,7 @@ function Header() {
             >
               <MenuItem value={"USD"}>USD - $</MenuItem>
               <MenuItem value={"RUB"}>RUB - ₽</MenuItem>
-              <MenuItem value={"UAH"}>UAH - ₴</MenuItem>
+              <MenuItem value={"KZT"}>KZT - ₸</MenuItem>
             </Select>
 
             {user ? <UserSidebar /> : <AuthModal />}
