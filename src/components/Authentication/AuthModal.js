@@ -8,7 +8,6 @@ import Login from "./Login";
 import { useState } from "react";
 import { CryptoState } from "../../CryptoContext";
 import { auth } from "../../firebase";
-import GoogleButton from "react-google-button";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const useStyles = makeStyles((theme) => ({
@@ -55,29 +54,6 @@ export default function AuthModal() {
     setValue(newValue);
   };
 
-  const googleProvider = new GoogleAuthProvider();
-
-  const signInWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((res) => {
-        setAlert({
-          open: true,
-          message: `Успех! ${res.user.email}`,
-          type: "success",
-        });
-
-        handleClose();
-      })
-      .catch((error) => {
-        setAlert({
-          open: true,
-          message: error.message,
-          type: "error",
-        });
-        return;
-      });
-  };
-
   return (
     <div>
       <Button
@@ -90,7 +66,7 @@ export default function AuthModal() {
         }}
         onClick={handleOpen}
       >
-        Войти
+        Sign in
       </Button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -119,20 +95,12 @@ export default function AuthModal() {
                 variant="fullWidth"
                 style={{ borderRadius: 10 }}
               >
-                <Tab label="Войти" />
-                <Tab label="Регистрация" />
+                <Tab label="Sign in" />
+                <Tab label="Sign up" />
               </Tabs>
             </AppBar>
             {value === 0 && <Login handleClose={handleClose} />}
             {value === 1 && <Signup handleClose={handleClose} />}
-            <Box className={classes.google}>
-              
-              <GoogleButton
-                style={{ width: "70%", outline: "none"}}
-                onClick={signInWithGoogle}
-                label='Войти с Google'
-              /> 
-            </Box>
           </div>
         </Fade>
       </Modal>
