@@ -40,7 +40,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Добавлено в отслеживаемые !`,
+        message: `${coin.name} Successfully added to watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -63,7 +63,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Удалено из отслеживаемого !`,
+        message: `${coin.name} Successfully removed from watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -164,7 +164,7 @@ const CoinPage = () => {
           </span>
           <span style={{ display: "flex" }}>
             <Typography variant="h5" className={classes.heading}>
-              Текущая цена:
+              Current price:
             </Typography>
             &nbsp; &nbsp;
             <Typography
@@ -181,7 +181,7 @@ const CoinPage = () => {
           </span>
           <span style={{ display: "flex" }}>
             <Typography variant="h5" className={classes.heading}>
-              Торговый оборот:
+              Trading turnover:
             </Typography>
             &nbsp; &nbsp;
             <Typography
@@ -209,7 +209,7 @@ const CoinPage = () => {
               }}
               onClick={inWatchlist ? removeFromWatchlist : addToWatchlist}
             >
-              {inWatchlist ? "Удалить из отслеживаемого" : "Добавить в отслеживаемое"}
+              {inWatchlist ? "Remove from watchlist" : "Add to watchlist"}
             </Button>
           )}
         </div>
