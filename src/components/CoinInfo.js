@@ -53,7 +53,7 @@ const CoinInfo = ({ coin }) => {
       primary: {
         main: "#fff",
       },
-      type: "dark",
+      type: "light",
     },
   });
 
@@ -82,7 +82,7 @@ const CoinInfo = ({ coin }) => {
                 datasets: [
                   {
                     data: historicData.map((coin) => coin[1]),
-                    label: `Цена ( за ${days} день/дней ) в ${currency}`,
+                    label: `Price ( for ${days} days ) in ${currency}`,
                     borderColor: "#EEBC1D",
                   },
                 ],
