@@ -62,7 +62,7 @@ function Header() {
                 onChange={(e) => setCurrency(e.target.value)}
               >
                 <MenuItem value={"USD"}>USD - $</MenuItem>
-                <MenuItem value={"KZT"}>KZT - ₸</MenuItem>
+                <MenuItem value={"KZT"}>KZT - ₸</MenuItem> 
                 <MenuItem value={"KRW"}>KRW - ₩</MenuItem>
               </Select>
 
