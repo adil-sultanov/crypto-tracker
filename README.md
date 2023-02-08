@@ -1,11 +1,12 @@
-# Vonatlus Crypto Tracker
-## Made with Firebase-Firestore and MUI
+# vonatlus Crypto Tracker
 
-### Demo - https://vonatlus-crypto-tracker.netlify.app/
+## Description
 
-<hr/>
+A crypto currency tracking website with authentication. Made with Firebase-Firestore and Material-UI.  
 
-<h4>Dependencies:</h4>
+Demo - https://vonatlus-crypto-tracker.netlify.app/
+
+## Dependencies
 
 ```
 material-ui
@@ -18,4 +19,9 @@ react-chartjs-2
 react-html-parser
 ```
 
-<hr>
+## Contacts
+Telegram: https://t.me/vonatlus
+
+Email: sultanov.adil05@gmail.com
+
+
