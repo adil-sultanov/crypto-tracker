@@ -41,7 +41,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Koma Crypto
+            vonatlus Crypto Tracker
           </Typography>
           <Typography
             variant="subtitle2"
