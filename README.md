@@ -1,7 +1,7 @@
-# Koma CryptoCurrency
+# Vonatlus Crypto Tracker
 ## Made with Firebase-Firestore and MUI
 
-### Demo - https://koma-crypto.netlify.app/
+### Demo - https://vonatlus-crypto-tracker.netlify.app/
 
 <hr/>
 
@@ -15,14 +15,7 @@ chart.js
 firebase
 react-alice-carousel
 react-chartjs-2
-react-google-button
 react-html-parser
 ```
 
 <hr>
-
-<p align="center">
-<img src='1.png'/>
-<img src='2.png' align='center'/>
-<img src='3.png'/>
-</p>
