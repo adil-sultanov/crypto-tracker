@@ -6,9 +6,6 @@ import { Button, Tab, Tabs, AppBar} from "@material-ui/core";
 import Signup from "./Signup";
 import Login from "./Login";
 import { useState } from "react";
-// import { CryptoState } from "../../CryptoContext";
-// import { auth } from "../../firebase";
-// import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -47,7 +44,7 @@ export default function AuthModal() {
       <Button
         variant="contained"
         style={{
-          width: 85,
+          width: 120,
           height: 40,
           marginLeft: 15,
           backgroundColor: "#EEBC1D",
