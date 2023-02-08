@@ -58,8 +58,8 @@ const CryptoContext = ({ children }) => {
 
   useEffect(() => {
     if (currency === "USD") setSymbol("$");
-    else if (currency === "RUB") setSymbol("₽");
-    else if (currency === "UAH") setSymbol("₴");
+    else if (currency === "KZT") setSymbol("₸");
+    else if (currency === "KRW") setSymbol("₩");
 
     fetchCoins();
     // eslint-disable-next-line react-hooks/exhaustive-deps
