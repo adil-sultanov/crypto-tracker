@@ -6,17 +6,18 @@
 <hr/>
 
 <h4>Dependencies:</h4>
-<ul>
-<li>material-ui</li>
-<li>material-ui/lab</li>
-<li>axios</li>
-<li>chart.js</li>
-<li>firebase</li>
-<li>react-alice-carousel</li>
-<li>react-chartjs-2</li>
-<li>react-google-button</li>
-<li>react-html-parser</li>
-</ul>
+
+```
+material-ui
+material-ui/lab
+axios
+chart.js
+firebase
+react-alice-carousel
+react-chartjs-2
+react-google-button
+react-html-parser
+```
 
 <hr>
 
