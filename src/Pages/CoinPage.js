@@ -150,7 +150,7 @@ const CoinPage = () => {
         <div className={classes.marketData}>
           <span style={{ display: "flex" }}>
             <Typography variant="h5" className={classes.heading}>
-              Рейтинг:
+              Rating:
             </Typography>
             &nbsp; &nbsp;
             <Typography
