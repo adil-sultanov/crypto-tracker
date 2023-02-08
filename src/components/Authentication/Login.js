@@ -14,7 +14,7 @@ const Login = ({ handleClose }) => {
     if (!email || !password) {
       setAlert({
         open: true,
-        message: "Заполните поля",
+        message: "Please fill out the form",
         type: "warning",
       });
       return;
@@ -24,7 +24,7 @@ const Login = ({ handleClose }) => {
       const result = await signInWithEmailAndPassword(auth, email, password);
       setAlert({
         open: true,
-        message: `Успех. Привет ${result.user.email}`,
+        message: `Success. Welcome ${result.user.email}`,
         type: "success",
       });
 
@@ -58,7 +58,7 @@ const Login = ({ handleClose }) => {
       />
       <TextField
         variant="outlined"
-        label="Пароль"
+        label="Password"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
@@ -70,7 +70,7 @@ const Login = ({ handleClose }) => {
         onClick={handleSubmit}
         style={{ backgroundColor: "#EEBC1D" }}
       >
-        Войти
+        Sign in
       </Button>
     </Box>
   );
